@@ -15,6 +15,13 @@ pytest = "^7.2.0"
 pytest-asyncio = "^0.20.0"
 loguru = "^0.6.0"
 respx = "^0.20.2"
+SQLAlchemy = "^2.0.25"
+alembic = "^1.13.1"
+pgvector = "^0.2.5"
+psycopg = {version = "^3.2.1", extras = ["binary"]}
+scikit-learn = "^1.4.2"
+sentence-transformers = "^2.2.2"
+tiktoken = "^0.6.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
