@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "stock_robot_v3"
+version = "0.1.0"
+description = "A multi-service application with FastAPI and Docker Compose"
+authors = ["Your Name <you@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+pydantic = "^1.10.0"  # 降級到 1.x 版本
+httpx = "^0.24.0"
+pytest = "^7.2.0"
+pytest-asyncio = "^0.20.0"
+loguru = "^0.6.0"
+respx = "^0.20.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
